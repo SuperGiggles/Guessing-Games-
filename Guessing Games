@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+srand(time(0));
+int number=rand%100+1;
+int guess()
+printf("Guess the number between 1 to100=");
+scanf("%d",&guess);
+while (guess!=number)
+{
+if(guess<number)
+printf("To low! Try again:");
+else
+printf("To high! Try again:");
+scanf("%d",&guess)
+}
+printf("you won!the number was indeed %d\n",number);
+}
